@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
     res.send(`<h1>CRM WEB-CODE PROJECT</h1>`)
 });
 
-app.use('/signUp', authRouter)
+app.use('/', authRouter)
 
 app.listen(port, (req, res) => {
     console.log(`APP IS RUNNING ON PORT=${port}`);
